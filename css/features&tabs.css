@@ -1,0 +1,1725 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* START header & Overlay STYLE */
+#section-1{
+    overflow: hidden;
+}
+#section-1 #header-background-image{
+    width: 100%;
+    height: 380px;
+    background-image: url("../images/img/background1.jpg");
+    background-position: 100% 39%;
+    background-size:cover;
+    position: relative;
+}
+#section-1 #header-background-image .overlay{
+    width: 100%;
+    height: 380px;
+    opacity: 0.8;
+    background: linear-gradient(#eb4e6f -10%, #4284df 75%);
+}
+#section-1 #header-background-image #overlay-content p{
+    font-size: 4.25rem;
+    position: absolute;
+    top: 36%;
+    left: 29%;
+    color: white;
+    font-weight: 700;
+    line-height: 1.2;
+}
+#section-1 #header-background-image #overlay-content span{
+    font-weight: normal;
+}
+#section-1 header{
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: all 0.3s ease-in-out;
+}
+#section-1 .colorByScroll{
+    background-color: #232323;
+}
+#section-1 .sticky{
+    position: fixed;
+    z-index: 100;
+}
+#section-1 .heightByScroll{
+    height: 65px;
+    transition: all 0.3s ease-in-out;
+}
+#section-1 header .left-side{
+    margin-left: 6%;
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+#section-1 header .left-side #mobiriseIcon{
+    padding-top: 8px;
+    width: 24%;
+    color: #4284df;
+    float: left;
+    transition: all 0.3s ease-in-out;
+}
+#section-1 .mobiriseIconByScroll{
+    margin-top: -4px;
+    width: 19% !important;
+}
+#section-1 header .left-side #mobirise{
+    font-size: 1.25rem;
+    padding-top: 24px;
+    margin-left: 4%;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Poppins';
+    color: white;
+    float: left;
+}
+#section-1 header .left-side #mobirise:hover{
+    color: #4284df;
+}
+#section-1 .mobiriseMargin{
+    margin-top: -10px;
+}
+#section-1 header .right-side{
+    width: 54%;
+    margin-left: 20%;
+    height: 100%;
+    float: left;
+}
+#section-1 header .right-side #header-items{
+    list-style: none;
+    position: relative;
+}
+#section-1 header .right-side #animating-border{
+    height: 4px;
+    width: 17.8%;
+    background-color: #4284df;
+    position: absolute;
+    top: 61px;
+    transition: all 0.4s ease-in-out;
+    visibility: hidden;
+    z-index: 30;
+}
+#section-1 header .right-side #header-items > li:hover ~ #animating-border{
+    visibility: visible !important;
+}
+.animatingBorderByScroll{
+    margin-top: -15px !important;
+}
+li:nth-child(2):hover ~ #animating-border{ 
+    transform: translate(160px);
+    width: 15% !important;
+    transition: all 0.4s ease-in-out;
+}
+li:nth-child(3):hover ~ #animating-border{ 
+    transform: translate(300px);
+    width: 10% !important;
+    transition: all 0.4s ease-in-out;
+}
+li:nth-child(4):hover ~ #animating-border{ 
+    transform: translate(400px);
+    width: 10% !important;
+    transition: all 0.4s ease-in-out;
+}
+#section-1 header .right-side #header-items #headerLink1, #headerLink2, #headerLink3, #headerLink4{
+    margin-right: 6.5%;
+    float: left;
+    padding-top: 28px;
+    color: white;
+    text-decoration: none;
+    font-size:  0.875rem; 
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    z-index: 100;
+}
+#section-1 header .right-side #header-items li{
+   transition: all 0.4s ease-in-out;
+}
+#section-1 header .right-side #header-items li a:hover{
+    color: #4284df !important;
+}
+#section-1 .headerLinksByScroll{
+    margin-top: -10px;
+    position: relative;
+    z-index: 100;
+}
+#section-1 header .right-side #header-items #menus-dropdown-parent{
+    position: relative;
+}
+#section-1 header .right-side #header-items #menus-dropdown-parent a #menus-dropdown-icon{
+    position: absolute;
+    left: 101%; 
+}
+#section-1 header .right-side #header-items #menus-dropdown-parent #menus-dropdown{
+    position: absolute;
+    left: 40%;
+    top: 80px;
+    visibility: hidden;
+    transition:  all 0.2s ease-in-out;
+    background-color: #232323;
+    list-style: none;
+    width: 21%;
+    height: 135px;
+}
+#section-1 header .right-side #header-items #menus-dropdown-parent:hover #menus-dropdown{
+    visibility: visible !important;
+}
+/* #section-1 header .right-side #header-items #menus-dropdown-parent #menus-dropdown li{
+    transition: all 0.2s ease-in-out; 
+} */
+#section-1 header .right-side #header-items #menus-dropdown-parent #menus-dropdown li i{
+    font-size: 0.8125rem;
+    line-height: 2.3;
+    margin-top: 4px;
+    margin-left: 12%;
+    color: white;
+    visibility: hidden;
+    transition: color 0.5s ease-in-out;
+    z-index: 70;
+}
+#section-1 header .right-side #header-items #menus-dropdown-parent #menus-dropdown li:first-child{
+    margin-top: 20px !important;
+}
+#section-1 header .right-side #header-items #menus-dropdown-parent #menus-dropdown li:hover i{
+    visibility: visible;
+    color: #4284df;
+}
+#section-1 header .right-side #header-items #menus-dropdown-parent #menus-dropdown li a{
+    padding: 20px 0px 20px 8%;
+    font-size: 0.8125rem;
+    text-decoration: none;
+    color: white;
+    transition:  all 0.2s ease-in-out;
+}
+#section-1 header .right-side #header-items #menus-dropdown-parent #menus-dropdown li a:hover{
+    color: #4284df;
+}
+#section-1 header .right-side #header-items #blocks-dropdown-parent{
+    position: relative;
+}
+#section-1 header .right-side #header-items #blocks-dropdown-parent a #blocks-dropdown-icon{
+    position: absolute;
+    left: 101%;
+}
+#section-1 header .right-side #header-items #blocks-dropdown-parent #blocks-dropdown{
+    position: absolute;
+    left: 54%;
+    top: 80px;
+    visibility: hidden;
+    transition:  all 0.2s ease-in-out;
+    background-color: #232323;
+    list-style: none;
+    width: 32%;
+    height: 400px;
+    z-index: 70;
+}
+#section-1 header .right-side #header-items #blocks-dropdown-parent:hover #blocks-dropdown{
+    visibility: visible;
+}
+#section-1 header .right-side #header-items #blocks-dropdown-parent #blocks-dropdown li i{
+    font-size: 0.8125rem;
+    line-height: 2.3;
+    margin-top: 4px;
+    margin-left: 8%;
+    color: white;
+    visibility: hidden;
+    transition: all 0.2 ease-in-out;
+    transition: color 0.4s ease-in-out;
+
+}
+#section-1 header .right-side #header-items #blocks-dropdown-parent #blocks-dropdown li:first-child{
+    margin-top: 20px !important;
+}
+#section-1 header .right-side #header-items #blocks-dropdown-parent #blocks-dropdown li:hover i{
+    color: #4284df;
+    visibility: visible;
+}
+#section-1 header .right-side #header-items #blocks-dropdown-parent #blocks-dropdown li a{
+    padding: 20px 0px 20px 8%;
+    font-size: 0.8125rem;
+    text-decoration: none;
+    color: white;
+    transition:  all 0.2s ease-in-out;
+}
+#section-1 header .right-side #header-items #blocks-dropdown-parent #blocks-dropdown li a:hover{
+    color: #4284df;
+}
+#section-1 .dropdownPositionByScroll{
+    margin-top: -15px;
+}
+#section-1 header .right-side button{
+    float: left;
+    margin-top: 8px;
+    padding: 3.3px 3.7%;
+    border: 1px solid #4284df;
+    border-radius: 4px;
+    background-color: #4284df;
+    color: white;
+    font-size:  0.875rem;
+    font-weight: 400;
+    transition: all 0.2s ease-in-out; 
+}
+#section-1 .buttonBositionByScroll{
+    margin-top: -5px !important;
+}
+/* END header & Overlay STYLE */
+
+/* START Insurance policy STYLE */
+#section-2{
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+#section-2 img{
+    width: 50%;
+    float: left;
+    height: 450px;
+}
+#section-2 .overlay{
+    width: 50%;
+    float: left;
+    height: 450px;
+}
+.overlay{
+    background-image: url('../images/img/background2.jpg');
+    width: 100%;
+    height: 450px;
+    background-size: 330% 330%;
+}
+#section-2 .gradient-overlay{
+    background: linear-gradient(90deg,#0c57bf, #6441a5);
+    height: 450px;
+    opacity: 0.9;
+    z-index: 3;
+}
+#section-2 .overlay-content{
+    background-color: transparent;
+    position: relative;
+    z-index: 50;
+    color: white;
+}
+#section-2 .overlay-content .title1{
+    font-size: 3rem;
+    margin-left: 6%;
+    margin-top: -330px;
+    font-weight: 100;
+    background-color: transparent;
+}
+#section-2 .overlay-content .title2{
+    margin-top: 10px;
+    font-size: 1.5rem;
+    margin-left: 6%;
+    background-color: transparent;
+}
+#section-2 .overlay-content .text{
+    font-size: 1.06rem;
+    margin-left: 6%;
+    margin-right: 5%;
+    font-weight: 100;
+    background-color: transparent;
+    font-family: 'Roboto', sans-serif !important;
+}
+/* END Insurance policy STYLE */
+
+/* START Flexible Rates STYLE */
+#section-3{
+    width: 100%;
+    height: 576px;
+    position: relative;
+}
+#section-3 .background-image{
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/img/background6.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+#section-3 .background-image .gradient-overlay{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, #d6173f, #4284df);
+    opacity: 0.2;
+}
+#section-3 .overlay-content{
+    width: 41%;
+    height: 100%;
+    padding: 90px 1rem;
+    background-color: white;
+    position: absolute;
+    top: 0px;
+    left: 9%;
+}
+#section-3 .overlay-content .content{
+    padding-left: 3rem;
+    padding-right: 4rem;
+    position: relative;
+    z-index: 50;    
+}
+#section-3 .overlay-content .content .title-1{
+    font-size: 3rem;
+    line-height: 1.2;
+    /* font-weight: 300; */
+    color: black;
+    margin-bottom: 1.5rem !important;
+}
+#section-3 .overlay-content .content .title-2{
+    font-size: 1.5rem;
+    font-weight: 100;
+    line-height: 1.3;
+    color: #464646;
+    margin-bottom: 1.5rem !important;
+}
+#section-3 .overlay-content .content .text{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.06rem;
+    color: #464646;
+    opacity: 0.9;
+    font-weight: 300;
+    margin-bottom: 1.5rem !important;
+}
+#section-3 .overlay-content .content button{
+    position: relative;
+    transition: border 0.3s ease-in-out, color 0.5s;
+    background-color: #4284df;
+    border: 1px solid #4284df;
+    border-radius: 4px;
+    color: white;
+    margin-left: 3%;
+    margin-right: 50%;
+    z-index: 15;
+    padding: 12px 12%;
+}
+#section-3 .overlay-content .content button::before{
+    content: " ";
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    right: 100%;
+    bottom: -1px;
+    transition: right 0.4s ease-in-out;
+    z-index: -1;
+    background-color: #1f5eb6;
+    border: 1px solid #1f5eb6;
+    border-radius: 4px;
+    visibility: hidden;
+}
+#section-3 .overlay-content .content button:hover::before{
+    right: 0px;
+    visibility: visible;
+}
+/* END Flexible Rates STYLE */
+
+/* START SECTION-4 STYLE */
+#section-4{
+    width: 100%;
+    height: 406px;
+    position: relative;
+}
+#section-4 .background-image{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-image: url("../images/img/background2.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+#section-4 .background-image .gradient-overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(90deg, #0c57bf, #21b968);
+    opacity: 0.8;
+}
+#section-4 .background-image .overlay-content{
+    position: absolute;
+    z-index: 50;
+    padding: 90px 5%
+}
+#section-4 .background-image .overlay-content .left-content img{
+    width: 26%;
+    height: 200px;
+    padding-left: 4.4%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 5.7%;
+    transition: all 0.2s ease-in-out;
+    float: left;
+}
+#section-4 .background-image .overlay-content .left-content:hover img{
+    transform: translateY(-8px);
+}
+#section-4 .background-image .overlay-content .right-content p{
+    color: white;
+    font-size: 3rem;
+    padding-top: 0.5rem;
+    font-weight: 100;
+    line-height: 1.6;
+    margin-right: 5%;
+}
+/* END SECTION-4 STYLE */
+
+/* START SECTION-5 STYLE */
+#section-5{
+    width: 100%;
+    height: 680px;
+    position: relative;
+}
+#section-5 .gradient-overlay{
+    width: 100%;
+    height: 100%;
+    background-color: #4284df;
+    background: linear-gradient(90deg, #4284df, #04367c);
+}
+#section-5 .overlay-content{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    overflow: hidden;
+}
+#section-5 .overlay-content .left-content{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+#section-5 .overlay-content .left-content .card{
+    width: 100%;
+    padding-left: 5%;
+    margin-bottom: 1rem !important;
+    background-color: transparent;
+    border-radius: 0px;
+    border: 0px;
+}
+#section-5 .overlay-content .left-content .card:first-child{
+    margin-top: 5rem;
+}
+#section-5 .overlay-content .left-content .card .card-number{
+    width: 20%;
+    padding-left: 11%;
+    height: 100%;
+    float: left;
+}
+#section-5 .overlay-content .left-content .card .card-number .count-number{
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: white;
+}
+#section-5 .overlay-content .left-content .card .card-body{
+    width: 80%;
+    height: 100%;
+    margin-left: 20%;
+    margin-top: -12%;
+    float: right;
+}
+#section-5 .overlay-content .left-content .card .card-body .card-title{
+    font-size: 1.5rem;
+    margin-bottom: 1rem !important;
+    padding-left: 4.5%;
+    color: white;
+    font-weight: 400;
+}
+#section-5 .overlay-content .left-content .card .card-body .card-text{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.06rem;
+    padding-left: 4.5%;
+    font-weight: 100;
+    color: white;
+}
+#section-5 .overlay-content .right-content{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+#section-5 .overlay-content .right-content img{
+    padding: 25% 17% 26% 8%;
+    width: 100%;
+    height: 100%;
+}
+/* END SECTION-5 STYLE */
+
+/* START SECTION-6 STYLE */
+#section-6{
+    width: 100%;
+    height: 600px;
+    background-color: #f9f9f9;
+}
+#section-6 .card-deck{
+    width: 100%;
+    padding: 5% 12%;
+    background-color: #f9f9f9;
+}
+#section-6 .card-deck .card{
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 0px;
+    background-color: #f9f9f9;
+}
+#section-6 .card-deck .card .card-img-top{
+    width: 100%;
+    height: 200px;
+    padding: 15px auto;
+}
+#section-6 .card-deck .card .card-img-top img{
+    width: 80%;
+    height: 100%;
+    margin-left: 16%;
+    border-radius: 50%;
+    padding: 11% 19%;
+}
+#section-6 .card-deck .card .card-body{
+    padding: 0px;
+}
+#section-6 .card-deck .card .card-body .card-title{
+    margin-left: 30%;
+    font-size: 1.3rem;
+    margin-bottom: 0.75rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+#section-6 .card-deck .card .card-body .card-text{
+    color: #767676;
+    text-align: center;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.925rem;
+    line-height: 1.6;
+    position: relative;
+}
+#section-6 .card-deck .card .card-body .job::before{
+    content: " ";
+    position: absolute;
+    top: 87%;
+    left: 30%;
+    width: 40%;
+    height: 3px;
+    background-color: #4284df;
+}
+
+#section-6 .job{
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.925rem;
+    color: #767676;
+    margin-top: 35px;
+    text-align: center;
+    font-weight: 500;
+}
+/* END SECTION-6 STYLE */
+
+/* START Our Team STYLE */
+#section-7{
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 80px;
+    background-color:  #f9f9f9;
+}
+#section-7 #section7-heading{
+    width: 100%;
+    height: 240px;
+    background-color:  #f9f9f9;
+}
+#section-7 #section7-heading .title{
+    padding-top: 50px;
+    font-weight: 400;
+    text-align: center;
+    font-size: 3rem;
+    line-height: 1.3;
+    padding-bottom: 1rem!important;
+}
+#section-7 #section7-heading .text{
+    font-size: 1.5rem;
+    line-height: 1.2;
+    text-align: center;
+    color: #524f4f;
+}
+#section-7 .cards-container{
+    width: 80%;
+    margin-left: 10%;
+}
+#section-7 .cards-container .card-deck .card{
+    width: 25%;
+    margin-right: 20px !important;
+    background-color:  #f9f9f9;
+    border: 0px;
+}
+#section-7 .cards-container .card-deck .card .card-img-top{
+    width: 98%;
+    margin-right: 2%;
+    display: flex;
+    justify-content: center;
+}
+#section-7 .cards-container .card-deck .card .card-image{
+    padding-left: 3%;
+    padding-right: 3%;
+    width: 90%;
+    border-radius: 50%;
+}
+#section-7 .cards-container .card-deck .card .card-body{
+    padding: 0px;
+}
+#section-7 .cards-container .card-deck .card .card-body .card-title{
+    font-size: 1.65rem;
+    margin-top: 40px;
+    margin-bottom: .75rem;
+    font-weight: bold;
+    text-align: center;
+}
+#section-7 .cards-container .card-deck .card .card-body .job{
+    color: #4284df;
+    line-height: 1.6;
+    /* font-size: 0.9rem; */
+    text-align: center;
+}
+#section-7 .cards-container .card-deck .card .card-body .card-text{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    text-align: center;
+}
+#section-7 .cards-container .card-deck .card .card-body i{
+    font-size: 1rem;
+    color:#232323;
+    padding-right: .5rem!important;
+    padding-left: .5rem!important;
+}
+#section-7 .cards-container .card-deck .card .card-body i:hover{
+    color: #4284df;
+}
+#section-7 .cards-container .card-deck .card .card-body .card-icons{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+/* END Our Team STYLE */
+
+/* START Our Personal STYLE*/
+#section-8{
+    width: 100%;
+    height: 700px;
+    position: relative;
+    overflow: hidden;
+}
+#section-8 .carousel-title{
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 60px;
+}
+#section-8 .carousel-content{
+    width: 86%;
+    margin-left: 7%;
+}
+#section-8 .carousel-item{
+    width: 64%;
+    margin-left: 17%;
+}
+#section-8 .carousel-item img{
+    width: 24%;
+    border-radius: 50%;
+    margin-left: 38%;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    display: block;
+}
+#section-8 .carousel-item .text{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.06rem;
+    text-align: center !important;
+    color: #232323;
+    line-height: 1.5;
+    margin-bottom: 2rem !important;
+}
+#section-8 .carousel-item .name, .job{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.06rem;
+    text-align: center !important;
+    color: #232323;
+    line-height: 1.5;
+}
+#section-8 #carousel-control-prev-background{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #d0cfcf;
+    position: absolute;
+    top: 56%;
+    left: 6%;
+}
+#section-8 #carousel-control-prev-background:hover{
+    background-color: #b7b4b4;
+}
+#section-8 #carousel-control-prev-background .carousel-control-prev{
+    width: 22px;
+    margin-left: 26%;
+}
+#section-8 #carousel-control-next-background{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #d0cfcf;
+    position: absolute;
+    top: 56%;
+    right: 6%;
+}
+#section-8 #carousel-control-next-background:hover{
+    background-color: #b7b4b4;
+}
+#section-8 #carousel-control-next-background .carousel-control-next{
+    width: 22px;
+    margin-right: 26%;
+}
+/* END Our Personal STYLE */
+
+/* START Organizational Behavior STYLE */
+#section-9{
+    width: 100%;
+    height: 860px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+}
+#section-9 .content{
+    width: 86%;
+    margin-left: 7%;
+}
+#section-9 .content .left-content{
+    width: 40%;
+    float: left;
+    height: 100%;
+    overflow: hidden;
+}
+#section-9 .content .left-content img{
+    padding: 90px 14% 90px 8%;
+    width: 100%;
+}
+#section-9 .content .right-content{
+    width: 60%;
+    float: left;
+    height: 100%;
+    background-color: #f9f9f9;
+    overflow: hidden;
+    padding-right: 4%;
+}
+#section-9 .content .right-content .title{
+    padding-top: 90px;
+    font-size: 3rem;
+    margin-bottom: 1.5rem!important;
+    line-height: 1;
+
+}
+#section-9 .content .right-content .text{
+    font-size: 1.5rem;
+    line-height: 1.3;
+    margin-bottom: 3rem!important;
+    color: #232323;
+    opacity: 0.9;
+}
+#section-9 .content .right-content .cards-container{
+    width: 100%;
+}
+#section-9 .content .right-content .cards-container .card{
+    width: 50%;
+    float: left;
+    border: 0px;
+    padding-right: 2%;
+    padding-left: 1%;
+    margin-bottom: 3rem !important;
+    background-color: #f9f9f9;
+}
+#section-9 .content .right-content .cards-container .card .card-number{
+    float: left;
+    font-size: 2rem;
+    margin-right: 1rem;
+    line-height: 1;
+    margin-bottom: .5rem;
+    color: #767676;
+    font-weight: bold;
+    margin-top: 5px;
+}
+#section-9 .content .right-content .cards-container .card .card-title{
+    font-size: 1.5rem;
+    margin-bottom: 1rem!important;
+    line-height: 1;
+    margin-left: 18%;
+    margin-top: -39px;
+    float: right;
+    width:70%;
+    color: #323232;
+}
+#section-9 .content .right-content .cards-container .card .card-text{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.06rem;
+    color: #767676;
+}
+/* END Organizational Behavior STYLE */
+
+/* START Our News STYLE */
+#sectiion-10{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#section-10 #cards-Heading{
+    width: 100%;
+    height:100px;
+}
+#section-10 #cards-Heading p{
+    padding-top: 50px;
+    margin-bottom: 50px;
+    font-size: 60px;
+    line-height: 50px;
+    font-weight: 400;
+    text-align: center;
+}
+#section-10 .card-deck{
+    width: 100%;
+    overflow: hidden;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+#section-10 .card{
+    border: 0;
+}
+#section-10 .card:first-child{
+    margin-left: 12%;
+}
+#section-10 .card:last-child{
+    margin-right: 12%;
+}
+#section-10 .card-img-top{
+    width: 100%;
+}
+#section-10 .card-title{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: bold;
+    margin-top: 20PX;
+    margin-bottom: .75rem;
+    font-family: 'Poppins', sans-serif;
+}
+#section-10 .card-body{
+    margin-left: -22px;
+}
+#section-10 .card-date{
+    margin-top: 20px;
+    background-color: #d6173f;
+    padding: 0.2rem 1rem;
+    font-size: 14px;
+    width: 58%;
+    color: white;
+}
+#section-10 .card-text{
+    color: #767676;
+    font-size: 0.9rem ;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+#section-10 .card-link .link{
+    color: #4284df;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.875rem;
+    position: relative;
+}
+#section-10 .card-link .link::after{
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: #4284df;
+    position: absolute;
+    bottom: -2px;
+    left: 0px;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+#section-10 .card-link .link:hover::after{
+    visibility: visible;
+    width: 100%;
+}
+#section-10 .last-cards-list{
+    padding-bottom: 120px;
+}
+/* END Our News STYLE */
+
+/* START Private Banking STYLE */
+#section-11{
+    width: 100%;
+    height: 630px;
+    background-color: #f9f9f9;
+    overflow: hidden;
+}
+#section-11 .container{
+    width: 80%;
+    margin-left: 10%;
+}
+#section-11 .container .title{
+    padding-top: 100px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1.5rem!important;
+}
+#section-11 .container .text{
+    font-size: 1.45rem !important;
+    line-height: 1.5;
+    color: #212529;
+    opacity: 0.9;
+    margin-bottom: 1.5rem!important;
+    text-align: center !important; 
+}
+#section-11 .container .card-deck .card{
+    border: 0px;
+}
+#section-11 .container .card-deck .card .card-body{
+    padding: 0px;
+}
+#section-11 .container .card-deck .card .card-body .card-icon{
+    font-size: 50px;
+    margin-left: 40%;
+    padding-top: 20px !important;
+    margin-top: 20px;
+    font-weight: 400;
+    color: #4284df;
+}
+#section-11 .container .card-deck .card .card-body .card-title{
+    padding-top: 1.5rem !important;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 500;
+}
+#section-11 .container .card-heading{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.06rem;
+    text-align: center;
+    color: #767676;
+}
+#section-11 .container .card{
+    padding-bottom: 80px;
+    background-color: #f9f9f9;
+}
+/* END Private Banking STYLE */
+
+/* START SECTION-12 STYLE */
+#section-12{
+    width: 100%;
+    height: 470px;
+    background-color: #f9f9f9;
+    overflow: hidden;
+}
+#section-12 #icons-list{
+    width: 80%;
+    margin-left: 10%;
+}
+#section-12 #icons-list .card-deck .card{
+    border: 0px;
+    margin-top: 50px;
+}
+#section-12 #icons-list .card-deck .card .card-body{
+    padding: 0px;
+}
+#section-12 #icons-list .card-deck .card .card-body .card-icon{
+    width: 100px;
+    height: 100px;
+    border:2px solid #4284df;
+    background-color: #4284df;
+    border-radius: 50%;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    margin-left: 25%;
+    margin-bottom: 30px;
+}
+#section-12 #icons-list .card-deck .card .card-body .card-icon .icon{
+    font-size: 45px;
+    color: white;
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    transition: all 0.2s ease-in-out;
+}
+#section-12 #icons-list .card-deck .card:hover .card-icon{
+    background-color: transparent;
+}
+#section-12 #icons-list .card-deck .card:hover .icon{
+    color: #4284df !important;
+}
+#section-12 #icons-list .card-deck .card .card-body .card-title{
+    padding: 0px !important;
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem !important;
+    text-align: center;
+    font-weight: 500;
+}
+#section-12 #icons-list .card-deck .card .card-body .card-text{
+    text-align: center;
+    color: #767676;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.06rem;
+    line-height: 1.6;
+}
+#icons-list .card{
+    padding-bottom: 20px;
+    background-color: #f9f9f9;
+}
+/* END SECTION-12 STYLE */
+
+/* START SECTION-13 STYLE */
+#section-13{
+    width: 100%;
+    height: 310px;
+    background-color: #f9f9f9;
+    overflow: hidden;
+}
+#section-13 .container{
+    width: 80%;
+    height: 100%;
+    margin-left: 10%;
+}
+#section-13 .container .card{
+    margin-top: 30px;
+    width: 33.333%;
+    float: left;
+    background-color: #f9f9f9;
+    border: 0px;
+}
+#section-13 .container .card .card-icon{
+    width: 20%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    padding-top: 10px;
+}
+#section-13 .container .card .card-icon .icon{
+    font-size: 4rem;
+    color: #4284df;
+}
+#section-13 .container .card .card-body{
+    float: right;
+    margin-top: -26%;
+    margin-left: 20%;
+    width: 80%;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+#section-13 .container .card .card-body .card-title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.06rem;
+    font-weight: bold;
+}
+#section-13 .container .card .card-body .card-text{
+    padding-right: 7%;
+    line-height: 1.6;
+    color: #767676;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.06rem;
+}
+/* END SECTION-13 STYLE */
+
+/* START SECTION-14 STYLE */
+#section-14{
+    width: 100%;
+    height: 610px;
+    overflow: hidden;
+}
+#section-14 .content{
+    width: 82%;
+    margin-left: 9%;
+}
+#section-14 .content .left-content{
+    width: 70%;
+    height: 100%;
+    float: left;
+}
+#section-14 .content .left-content .title{
+    font-size: 1.5rem;
+    padding-top: 90px;
+}
+#section-14 .content .left-content .text{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.06rem;
+    line-height: 1.3;
+    color: #212529;
+    padding-bottom: 1rem!important;
+}
+#section-14 .content .left-content .cards-container{
+    width: 90%;
+    margin-left: 5%;
+    height: 100%;
+    padding-top: 15px;
+}
+#section-14 .content .left-content .cards-container .card{
+    width: 50%;
+    float: left;
+    margin-bottom: 1rem !important;
+    border: 0px;
+}
+#section-14 .content .left-content .cards-container .card .card-icon{
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+#section-14 .content .left-content .cards-container .card .card-icon .icon{
+    font-size: 3rem;
+    padding: 0.5rem;
+    color: #4284df;
+    padding-top: -13px;
+}
+#section-14 .content .left-content .cards-container .card .card-body{
+    width: 80%;
+    height: 100%;
+    float: left;
+    margin-left: 20%;
+    margin-top: -72px;
+}
+#section-14 .content .left-content .cards-container .card .card-body .card-title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.06rem;
+    color: black;
+    font-weight: bold;
+}
+#section-14 .content .left-content .cards-container .card .card-body .card-text{
+    color: #212529;
+}
+#section-14 .content .right-content{
+    width: 30%;
+    height: 100%;
+    float: left;
+}
+#section-14 .content .right-content .card{
+    background-color: #4284df;
+    border-radius: 5px;
+    margin-top: 120px;
+    height: 370px;
+    width: 86%;
+    margin-left: 7%;
+}
+#section-14 .content .right-content .card .card-content{
+    border-radius: 5px;
+    padding: 15px 20px 0px 20px;
+    background-color: #4284df;
+}
+#section-14 .content .right-content .card .card-content p{
+    background-color: #4284df;
+    color: white;
+}
+#section-14 .content .right-content .card .card-content .card-heading{
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.06rem;
+}
+#section-14 .content .right-content .card .card-content .title{
+    margin-top: -20px;
+    padding-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+#section-14 .content .right-content .card .card-content .date, .Date{
+    margin-top: -20px;
+    line-height: 3rem;
+    margin-bottom: 7px;
+    float: left;
+    font-size: 1rem;
+    font-weight: 400;
+    width: 100%;
+    position: relative;
+}
+#section-14 .content .right-content .card .card-content  .Date .Time{
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: #4284df;
+    color: white;
+    float:right;
+    margin-right: 1%;
+}
+#section-14 .content .right-content .card .card-content  .date .time{
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: #4284df;
+    color: white;
+    float:right;
+    margin-right: 1%;
+}
+#section-14 .content .right-content .card .card-content .date::after{
+    content:" ";
+    height: 1px; 
+    width: 98%;
+    background-color: white;
+    position: absolute;
+    left: 2%;
+    top: -1px;
+}
+/* END SECTION-14 STYLE */
+
+/* START Credit Card STYLE */
+#section-15{
+    width: 100%;
+    height: 720px;
+    overflow: hidden;
+    position: relative;
+}
+#section-15 .gradient-overlay{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #fd446b;
+    background: linear-gradient(90deg, #fd446b, #5238ff);
+}
+#section-15 .title{
+    color: white;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 1.5rem!important;
+    position: relative;
+    z-index: 50;
+    padding-top: 5rem;
+}
+#section-15 .text{
+    font-size: 1.6rem;
+    line-height: 1.3;
+    position: relative;
+    z-index: 50;
+    color: white;
+    text-align: center;
+    padding-left: 11%;
+    padding-right: 11%;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 4rem !important;
+}
+#section-15 .cards-container{
+    width: 77%;
+    margin-left: 11.5%;
+}
+#section-15 .cards-container .card{
+    width: 30%;
+    margin: calc(10% / 6);
+    height: 250px;
+    float: left;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 0px;
+    border: 1px solid transparent;
+}
+#section-15 .cards-container .card .card-content{
+    padding: 1.5rem;
+}
+#section-15 .cards-container .card .card-content .icon{
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 70px;
+    margin-bottom: 1.5rem;
+    display: block;
+    padding-top: 1rem;
+}
+#section-15 .cards-container .card .card-content .card-text{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.06rem;
+    line-height: 1.6;
+    color: white;
+    text-align: center;
+}
+#section-15 .cards-container .card .card-content .card-title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.06rem;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+/* END Credit Card STYLE */
+
+/* START SECTION-16 STYLE */
+#section-16{
+    width: 100%;
+    height: 640px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+}
+#section-16 .cards-container{
+    width: 80%;
+    margin-left: 10%;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background-color: #f9f9f9;
+}
+#section-16 .cards-container .card-deck .card{
+    border: 0px;
+    background-color: #f9f9f9;
+}
+#section-16 .cards-container .card-deck .card .card-body{
+    padding: 0px;
+}
+#section-16 .cards-container .card-deck .card .card-body .card-title{
+    padding-top: 2.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: .75rem;
+}
+#section-16 .cards-container .card-deck .card .card-body .card-text{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.02rem;
+    line-height: 1.6;
+}
+
+#section-16 .cards-container .card-deck .card .card-body .card-link .link{
+    color: #4284df;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.875rem;
+    position: relative;
+}
+#section-16 .cards-container .card-deck .card .card-body .card-link .link::after{
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: #4284df;
+    position: absolute;
+    bottom: -2px;
+    left: 0px;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+#section-16 .cards-container .card-deck .card .card-body .card-link .link:hover::after{
+    visibility: visible;
+    width: 100%;
+}
+/* END SECTION-16 STYLE */
+
+/* START SECION-17 STYLE */
+#section-17{
+    width: 100%;
+    height: 630px;
+    background-color: #f9f9f9;
+    overflow: hidden;
+}
+#section-17 .cards-container{
+    width: 80%;
+    margin-left: 10%;
+    padding-top: 90px;
+    /* padding-bottom: 90px; */
+}
+#section-17 .cards-container .card-deck .card{
+    border: 0px;
+    background-color: #f9f9f9;
+}
+#section-17 .cards-container .card-deck .card .card-body{
+    padding: 0px;
+}
+#section-17 .cards-container .card-deck .card .card-body .card-title{
+    padding-top: 2.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: .75rem;
+}
+#section-17 .cards-container .card-deck .card .card-body .card-text{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.02rem;
+    line-height: 1.6;
+    opacity: 0.8;
+}
+#section-17 .cards-container .card-deck .card .card-body .card-link .link{
+    color: #4284df;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.875rem;
+    position: relative;
+}
+#section-17 .cards-container .card-deck .card .card-body .card-link .link::after{
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: #4284df;
+    position: absolute;
+    bottom: -2px;
+    left: 0px;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+#section-17 .cards-container .card-deck .card .card-body .card-link .link:hover::after{
+    visibility: visible;
+    width: 100%;
+}
+#section-17 .cards-container .card-deck .card:last-child{
+    background-color: #4284df;
+    border-radius: 5px;
+    /* margin-top: 120px; */
+    /* height: 370px; */
+    width: 86%;
+    /* margin-left: 7%; */
+}
+#section-17 .cards-container .card-deck .card:last-child .card-content{
+    border-radius: 5px;
+    padding: 15px 20px 0px 20px;
+    background-color: #4284df;
+}
+#section-17 .cards-container .card-deck .card:last-child .card-content p{
+    background-color: #4284df;
+    color: white;
+}
+#section-17 .cards-container .card-deck .card:last-child .card-content .card-heading{
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.06rem;
+}
+#section-17 .cards-container .card-deck .card:last-child .card-content .title{
+    margin-top: -20px;
+    padding-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+#section-17 .cards-container .card-deck .card:last-child{
+    background-color: #4284df;
+    color: white;
+    height: 90%;
+    /* padding: 5px 2%; */
+}
+#section-17 .cards-container .card-deck .card:last-child .date, .Date{
+    margin-top: -20px;
+    line-height: 3rem;
+    margin-bottom: 7px;
+    float: left;
+    font-size: 1rem;
+    font-weight: 400;
+    width: 100%;
+    position: relative;
+}
+#section-17 .cards-container .card-deck .card:last-child .Date .Time{
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: #4284df;
+    color: white;
+    float:right;
+    margin-right: 1%;
+}
+#section-17 .cards-container .card-deck .card:last-child .date .time{
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: #4284df;
+    color: white;
+    float:right;
+    margin-right: 1%;
+}
+#section-17 .cards-container .card-deck .card:last-child .date::after{
+    content:" ";
+    height: 1px; 
+    width: 98%;
+    background-color: white;
+    position: absolute;
+    left: 2%;
+    top: -1px;
+}
+/* END SECTION-17 STYLE */
+
+/* START Tabs and media STYLE */
+#section-18{
+    width: 100%;
+    height: 680px;
+    background-color: #f9f9f9;
+    overflow: hidden;
+}
+#section-18 #tabs-and-media{
+    width: 100%;
+    height: 100%;
+    padding-top: 60px;
+}
+#section-18 #tabs-and-media p:first-child{
+    font-size: 55px;
+    text-align: center;
+    margin-bottom: 70px;
+    color: black;
+}
+#section-18 #tabs-and-media img{
+    width: 45%;
+    height: 400px;
+    margin-left: 7%;
+    margin-right: 7%;
+    float: left;
+}
+#section-18 #media-header{
+    float: right;
+    margin-right: 10%;
+    margin-bottom: 60px;
+    width: 31%;
+    height: 50px;
+}
+#section-18 #media-header #first-media-header-item{
+    float: left;
+    margin-left: 20%;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.06rem;
+    color: #4284df;
+    padding: 8px 4%;
+    position: relative;
+}
+#section-18 #media-header #first-media-header-item::after{
+    content: " ";
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: #4284df;
+}
+/* #section-18 #media-header .background-color{
+    float: left;
+    width: 25%;
+    background-color: palegoldenrod;
+    position: relative;
+} */
+/* #section-18 #media-header .background-color:hover{
+    background-color: #4284df !important;
+    color: white;
+} */
+#section-18 #media-header #seconed-media-header-item{
+    float: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.06rem;
+    font-weight: 400;
+    padding: 8px 4%;
+    margin-left: -4px;
+    color: #767676;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    position: relative;
+}
+/* اشتغل فى الاول وبعدين وقف مش عارفه ليه؟؟؟؟ */
+#section-18 #media-header #seconed-media-header-item:hover{
+    background-color: #4284df !important;
+    color: white;
+}
+#section-18 #media-header #seconed-media-header-item::after{
+    content: " ";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    margin-left: -4px;
+    background-color: #4284df; 
+}
+#section-18 #tabs-and-media p:last-child{
+    color: #767676;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-right: 7%;
+    padding-right: 4%;
+    opacity: 0.9;
+}
+/* END Tabs and media STYLE */
+
+/* START AGENCYM4 BLOCKS STYLE */
+#section-19{
+    width: 100%;
+    height: 2000px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+}
+#section-19 .cards-heading{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#section-19 .cards-heading p{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    color: black;
+}
+#section-19 .container{
+    width: 80%;
+    margin-left: 10%;
+}
+#section-19 .container .card-deck .card{
+    background-color: #f9f9f9;
+    margin-bottom: 3rem;
+    padding-bottom: 20px;
+    border: 0px;
+}
+#section-19 .container .card-deck .card .card-body{
+    padding: 0px;
+}
+#section-19 .container .card-deck .card .card-body .card-title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    padding-top: 2rem;
+    color: black;
+}
+#section-19 .container .card-deck .card .card-body .card-link .link{
+    color: #4284df;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.875rem;
+    position: relative;
+}
+#section-19 .container .card-deck .card .card-body .card-link .link::after{
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: #4284df;
+    position: absolute;
+    bottom: 1px;
+    left: 0px;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+#section-19 .container .card-deck .card .card-body .card-link .link:hover::after{
+    visibility: visible;
+    width: 100%;
+}
+/* END AGENCYM4 BLOCKS STYLE */
+
+/* START footer STYLE */
+footer{
+    width: 100%;
+    height: 170px;
+    background-color:#efefef !important;
+    overflow: hidden;
+}
+#footer-content{
+    width: 100%;
+    padding: 60px 10%;
+    background-color:#efefef;
+}
+.mobirise-image{
+    background-color:#efefef;
+    width: 65px;
+    height: 65px;
+    margin-top: -5px;
+    margin-left: 5%;
+    margin-right: 1%;
+}
+footer span{
+    background-color:#efefef;
+    font-weight: 500;
+    margin-right: 10%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+}
+#Copyright{
+    background-color:#efefef;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.06rem;
+    font-weight: 100;
+    margin-right: 6%; 
+}
+#footer-icons{
+    background-color:#efefef;
+    width: 12%;
+    font-size: 22px;
+    float: right;
+    margin-right: 5%;
+    margin-top: 8px;
+}
+#footer-icons i{
+    background-color:#efefef;
+    margin-left: 10%;
+}
+/* END footer STYLE */
